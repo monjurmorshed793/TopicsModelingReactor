@@ -1,0 +1,15 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-exclude: static/**
+    livereload:
+      enabled: false # we use Webpack dev server + BrowserSync for livereload
+  r2dbc:
+    url: r2dbc:sqlserver://localhost:1433
+    username: monjur
+    password: ig100
+    pool:
+      initial-size: 10
+      max-size: 10
+    name: StackOverflow
